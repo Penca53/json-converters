@@ -23,8 +23,6 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
       working-directory: ./src/Penca53.JsonConverters/
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
     - name: Publish  
       uses: brandedoutcast/publish-nuget@v2.5.5  
       with:   
